@@ -16,10 +16,10 @@
       "supportsTablet": true
     },
     "android": {
+      "package": "com.MemoApp",
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff",
-         "package": "com.MemoApp"
+        "backgroundColor": "#ffffff"
       }
     },
     "web": {
