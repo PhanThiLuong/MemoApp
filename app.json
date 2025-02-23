@@ -12,7 +12,11 @@
       "backgroundColor": "#ffffff"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.MemoApp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
     },
     "android": {
       "package": "com.MemoApp",
@@ -34,6 +38,7 @@
       "eas": {
         "projectId": "66910739-2f4f-49c1-926c-6d9925c8d54d"
       }
-    }
+    },
+    "scheme": "expo" 
   }
 }
