@@ -1,55 +1,8 @@
-import { View,Text } from "react-native";
+import { Redirect} from "expo-router";
 import React from "react";
-import { StyleSheet } from 'react-native';
 
-const Index = () =>{
-    return(
-        <View style={styles.container}>
-            <View>
-                <View>
-                    <Text> Memo App</Text>
-                    <Text>ログアウト</Text>
-                </View>
-            </View>
-            <View>
-                <View>
-                    <Text>買い物リスト</Text>
-                    <Text>2023年10月4日 10:00</Text>
-                </View>
-                <View>
-                    <Text>X</Text>
-                </View>
-            </View>
-            <View>
-                <View>
-                    <Text>買い物リスト</Text>
-                    <Text>2023年10月4日 10:00</Text>
-                </View>
-                <View>
-                    <Text>X</Text>
-                </View>
-            </View>
-            <View>
-                <View>
-                    <Text>買い物リスト</Text>
-                    <Text>2023年10月4日 10:00</Text>
-                </View>
-                <View>
-                    <Text>X</Text>
-                </View>
-            </View>
-            <View>
-                <Text>+</Text>
-            </View>
-        </View>
-    )
-}
-const styles = StyleSheet.create({
-container:{
-    flex:1,
-    justifyContent:'center',
-    alignItems:'center'
-}
-})
 
+const Index = () => {
+    return <Redirect href='auth/log_in'/>
+}
 export default Index
