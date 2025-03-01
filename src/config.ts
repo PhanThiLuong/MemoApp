@@ -2,11 +2,8 @@ import {initializeApp} from 'firebase/app';
 import {initializeAuth, getReactNativePersistence} from 'firebase/auth';
 import {getFirestore} from 'firebase/firestore';
 import  ReactNativeAsyncStorage  from '@react-native-async-storage/async-storage';
-import { config } from 'dotenv';
-config();  // Tải các biến môi trường từ tệp .env
 
 // Sử dụng biến môi trường
-console.log(process.env.MY_ENV_VARIABLE);
 const firebaseConfig = {
     apiKey: process.env.EXPO_PUBLIC_FB_API_KEY,
     projectId: process.env.EXPO_PUBLIC_FB_PROJECT_ID,

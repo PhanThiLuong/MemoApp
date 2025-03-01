@@ -4,8 +4,7 @@ import React from "react";
 const Layout = () => {
     return <Stack screenOptions={{
         headerStyle:{
-            backgroundColor: '#2B92E6',
-            
+            backgroundColor: '#2B92E6',            
         },
         headerTintColor: '#fff',
         headerTitle: 'Memo App',

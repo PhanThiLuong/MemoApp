@@ -1,37 +1,36 @@
 {
   "expo": {
-    "name": "MemoApp",
+    "name": "Luong Memo",
     "slug": "MemoApp",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash-icon.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true,
-      "bundleIdentifier": "com.MemoApp",
-      "infoPlist": {
-        "ITSAppUsesNonExemptEncryption": false
-      }
-    },
     "android": {
       "package": "com.MemoApp",
+      "versionCode": 1,
+      "permissions": [
+       "android.permission.READ_EXTERNAL_STORAGE",
+       "android.permission.WRITE_EXTERNAL_STORAGE", 
+       "android.permission.READ_MEDIA_IMAGES"
+      ],
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
+        "foregroundImage": "./assets/icon.png",
+        "backgroundImage": "./assets/Background.png"
+      },
+      "splash": {
+        "backgroundColor": "#2B92E6",
+        "image": "./assets/adaptive-icon.png",
+        "resizeMode": "cover",
+        "plugins": [
+          "expo-router",
+          "expo-font"
+        ]
       }
     },
     "web": {
-      "favicon": "./assets/favicon.png"
+      "favicon": "./assets/adaptive-icon.png"
     },
-    "plugins": [
-      "expo-router",
-      "expo-font"
-    ],
     "extra": {
       "router": {
         "origin": false
@@ -40,6 +39,12 @@
         "projectId": "66910739-2f4f-49c1-926c-6d9925c8d54d"
       }
     },
-    "scheme": "expo"
+    "scheme": "expo",
+    "ios": {
+      "bundleIdentifier": "com.MemoApp",
+      "infoPlist": {
+        "ITSAppUsesNonExemptEncryption": false
+      }
+    }
   }
 }
